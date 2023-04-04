@@ -72,6 +72,13 @@ public class VehicleTest {
         assertThat(vehicle2.getFuelType()).isEqualTo("Diesel");
         assertThat(vehicle3.getFuelType()).isEqualTo("Petrol");
     }
+    @Test
+    public void canOverload(){
+        Vehicle vehicle1 = new Helicopter("Black Hawk", 3, 5, 400, "Kerosene");
+        assertThat(vehicle1.addRandom("Black Hawk", 5)).isEqualTo(408);
+        assertThat(vehicle1.addRandom(400)).isEqualTo(400);
+        System.out.println(vehicle1.addRandom("Black Hawk",5));
+    }
 
 
 

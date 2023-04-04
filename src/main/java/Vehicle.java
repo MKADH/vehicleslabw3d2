@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public abstract class Vehicle {
 
     private String name;
@@ -14,6 +12,12 @@ public abstract class Vehicle {
         this.occupancy = occupancy;
         this.topSpeed = topSpeed;
         this.fuelType = fuelType;
+    }
+    public int addRandom(int topSpeed){
+        return this.topSpeed;
+    }
+    public int addRandom(String name, int occupancy){
+        return this.topSpeed + this.occupancy + this.wheels;
     }
 
     public String getName() {

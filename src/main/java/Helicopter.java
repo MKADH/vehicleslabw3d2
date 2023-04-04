@@ -1,14 +1,14 @@
 public class Helicopter extends AirVehicle{
 
     private int propellers;
-    private double mass;
+    private int mass;
 
 
 
     public Helicopter(String name, int wheels, int occupancy, int topSpeed, String fuelType) {
         super(name, wheels, occupancy, topSpeed, fuelType);
         this.propellers = 2;
-        this.mass = 2000.5;
+        this.mass = 2000;
     }
 
     public boolean publicTravel(){
@@ -20,7 +20,7 @@ public class Helicopter extends AirVehicle{
     public int npropellers(){
         return this.propellers;
     }
-    public double mass(){
+    public int mass(){
         return this.mass;
     }
     public String park(){
@@ -40,7 +40,7 @@ public class Helicopter extends AirVehicle{
         return mass;
     }
 
-    public void setMass(double mass) {
+    public void setMass(int mass) {
         this.mass = mass;
     }
 }

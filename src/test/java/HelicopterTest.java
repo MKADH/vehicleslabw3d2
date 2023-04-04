@@ -17,7 +17,7 @@ public class HelicopterTest {
     }
     @Test
     public void massOfHeli(){
-        assertThat(helicopter.mass()).isEqualTo(2000.5);
+        assertThat(helicopter.mass()).isEqualTo(2000);
     }
     @Test
     public void canFly(){
