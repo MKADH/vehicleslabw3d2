@@ -26,4 +26,21 @@ public class Helicopter extends AirVehicle{
     public String park(){
         return "Only on Helipads";
     }
+    public String Fly() { return "I can fly";}
+
+    public int getPropellers() {
+        return propellers;
+    }
+
+    public void setPropellers(int propellers) {
+        this.propellers = propellers;
+    }
+
+    public double getMass() {
+        return mass;
+    }
+
+    public void setMass(double mass) {
+        this.mass = mass;
+    }
 }

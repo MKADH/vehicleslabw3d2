@@ -17,5 +17,7 @@ public class CarTest {
     public void doYouHaveABugatti(){
         assertThat(car.carType()).isEqualTo("No Mr Andrew Tate, I have a Toyota");
     }
+    @Test
+    public void canGetType(){assertThat(car.getType()).isEqualTo("Toyota Yaris");}
 
 }

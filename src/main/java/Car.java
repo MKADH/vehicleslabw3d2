@@ -18,4 +18,12 @@ public class Car extends LandVehicle{
     public String park(){
         return "Only on designated roads and car parks";
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 }

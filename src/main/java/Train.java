@@ -21,4 +21,8 @@ public class Train extends LandVehicle{
     public String park(){
         return "Only on platforms & depots";
     }
+
+    public void setTrainLength(double trainLength) {
+        this.trainLength = trainLength;
+    }
 }

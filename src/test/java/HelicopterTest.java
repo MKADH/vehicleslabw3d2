@@ -23,5 +23,9 @@ public class HelicopterTest {
     public void canFly(){
         assertThat(helicopter.Fly()).isEqualTo("I can fly");
     }
+    @Test
+    public void canPark(){
+        assertThat(helicopter.park()).isEqualTo("Only on Helipads");
+    }
 
 }
