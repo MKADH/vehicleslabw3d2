@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class LandVehicleTest {
@@ -22,7 +24,9 @@ public class LandVehicleTest {
         landVehicle.addLandVehicles(vehicle1);
         landVehicle.addLandVehicles(vehicle2);
         assertThat(landVehicle.countLandVehicles()).isEqualTo(2);
-
-
+    }
+    @Test
+    public void canGetArrayList(){
+        assertThat(landVehicle.getVehicle()).isEqualTo(new ArrayList());
     }
 }

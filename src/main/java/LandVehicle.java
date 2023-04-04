@@ -9,8 +9,18 @@ public class LandVehicle extends Vehicle{
     public int countLandVehicles(){
         return this.vehicle.size();
     }
+
+    public ArrayList<Vehicle> getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(ArrayList<Vehicle> vehicle) {
+        this.vehicle = vehicle;
+    }
+
     public void addLandVehicles(Vehicle vehicle){
         this.vehicle.add(vehicle);
+
     }
 
 
